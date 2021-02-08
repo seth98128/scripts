@@ -1,0 +1,206 @@
+local library = loadstring(game:HttpGet("https://pastebin.com/raw/biPMm9qD"))();
+
+-- Scripts
+local Gamer = library:CreateSection("Scripts");
+
+----------------
+Gamer:Label("--== Scripts ==--")
+----------------
+
+Gamer:Button("Krystal Dance",function()
+loadstring(game:HttpGet('https://pastebin.com/raw/FV3HLmTH'))()
+
+end)
+
+Gamer:Button("Chill",function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/XmHFdTij"))()
+end)
+
+Gamer:Button("VR",function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/7vu46PFU"))()
+end)
+
+Gamer:Button("Car",function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/e0H1h4j2"))()
+end)
+
+Gamer:Button("Pyramid",function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/47FxhPef"))()
+end)
+
+Gamer:Button("Table",function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/9kDrHnUd"))()
+end)
+
+Gamer:Button("Caducus",function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/EBZJSfw0"))()
+end)
+
+Gamer:Button("Sonic",function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/SyF5t70A"))()
+end)
+
+Gamer:Button("Gun",function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/u4Nm3Wfa"))()
+end)
+
+Gamer:Button("Wall Walk",function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/1jh2FCAx"))()
+end)
+
+Gamer:Button("Dog",function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/H0fCpUYQ"))()
+end)
+
+Gamer:Button("neko v1 remake (Nullware/fixed)",function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/UvMM7bJj"))()
+end)
+
+Gamer:Button("Gale Fighter (Nullware/fixed)",function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/f05jEiEC"))()
+end)
+
+-- hat scripts
+local Gamer2 = library:CreateSection("Hat Scripts");
+
+----------------
+Gamer2:Label("--== Hat Scripts ==--")
+----------------
+
+Gamer2:Button("Sniper (nullware/hat needed/fixed)",function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/63xjW8QJ"))()
+end)
+
+Gamer2:Button("John Doe (hat needed)",function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/DwhVGxTs"))()
+end)
+
+Gamer2:Button("Nep V Bat (hat needed)",function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/Xjd3HaGH"))()
+end)
+
+Gamer2:Button("Hat Universe (hat needed)",function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/x23Udfmz"))()
+end)
+
+Gamer2:Button("VR Sniper (hat needed)",function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/3UyVkraS"))()
+end)
+
+Gamer2:Button("hot script (hat needed)",function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/seth98128/scripts/main/no"))()
+end)
+
+Gamer2:Button("Trix's Archomatic edit (hat needed)",function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/EDbf0kD0"))()
+end)
+
+-- Utility
+local Gamer3 = library:CreateSection("Utility");
+
+----------------
+Gamer3:Label("--== Reanimation ==--")
+----------------
+
+-- nullware reanimate --
+Gamer3:Button("Nullware Reanimate",function()
+loadstring(game:HttpGetAsync("https://gist.githubusercontent.com/M6HqVBcddw2qaN4s/fc29cbf0eda6f8b129778b441be3128f/raw/6StQ2n56PnEHMhQ9"))()
+end)
+
+Gamer3:Toggle("R15 Character Bug", function(value)
+    _G.CharacterBug = value
+end)
+
+Gamer3:Toggle("R15 to R6", function(value)
+    _G.R6           = value
+end)
+
+Gamer3:Toggle("GodMode", function(value)
+    _G.GodMode      = value
+end)
+
+----------------
+Gamer3:Label("--== Script Hub ==--")
+----------------
+
+-- Script Hub
+Gamer3:Button("infinite yield (only once on krnl for no reason lol)",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Gamer3:Button("Ragdoll Engine GUI",function()
+loadstring(game:HttpGet('https://pastebin.com/raw/VC1GgXmw'))()
+end)
+
+Gamer3:Button("Another Ragdoll Engine GUI",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Vynixius%20Ragdoll%20Engine'))()
+end)
+
+Gamer3:Button("Auratus X",function()
+loadstring(game:HttpGet('https://pastebin.com/raw/1J8jdMBk'))()
+end)
+
+----------------
+Gamer3:Label("--== Other ==--")
+----------------
+
+-- Other
+Gamer3:Button("god mode (does not work on ragdoll and dont press R)",function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/NZweAqfP"))()
+end)
+
+Gamer3:Button("Chat Bypass",function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/bedra45/chetbypasser/main/chetbypass"))()
+end)
+
+Gamer3:Button("Give Push(Ragdoll Engine)",function()
+local players = game.Players:GetChildren()
+local selected = players[math.random(1,#players)]
+local value = nil
+print(selected)
+if not selected.Backpack:FindFirstChild("Push") then
+    print("nil")
+    else
+        selected.Backpack.Push.Parent = game.Players.LocalPlayer.Backpack
+        value = true  
+end
+end)
+
+-- Settings
+local Gamer4 = library:CreateSection("Settings");
+
+----------------
+Gamer4:Label("--== Settings ==--");
+----------------
+
+Gamer4:Button("Rejoin Game",function()
+local ts = game:GetService("TeleportService")
+local p = game:GetService("Players").LocalPlayer
+ts:Teleport(game.PlaceId, p)
+end)
+
+
+Gamer4:Button("Server Hop",function()
+local HttpService, TPService = game:GetService("HttpService"), game:GetService("TeleportService")
+local ServersToTP = HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100"))
+for _, s in pairs(ServersToTP.data) do
+   if s.playing ~= s.maxPlayers then
+       TPService:TeleportToPlaceInstance(game.PlaceId, s.id)
+   end
+end
+end)
+
+-- Credits
+local Gamer5 = library:CreateSection("Credits");
+
+----------------
+Gamer5:Label("--== Credits ==--");
+----------------
+
+Gamer5:Button("Made By catboy.uwu#2913");
+
+Gamer5:Button("credits to all for the scripts");
+
+Gamer5:Button("discord.gg/aJb4k3rKVu");
+
+library:Ready();
