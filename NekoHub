@@ -1,0 +1,31 @@
+---=== Neko Hub v0.1 ===---
+
+game.StarterGui:SetCore("SendNotification", {
+Title = "Neko Hub v0.1 - Loader";
+Text = "Script loaded | made by catboy.uwu #2913";
+Duration = 5;
+})
+
+_G.ToggleColor = Color3.fromRGB(50,50,50)
+_G.ButtonColor = Color3.fromRGB(255,174,202)
+_G.SliderColor = Color3.fromRGB(255,174,202)
+
+local library = loadstring(game:HttpGet(('https://pastebin.com/raw/FsJak6AT')))()
+
+local w = library:CreateWindow("Hello")
+
+local b = w:CreateFolder("Loader")
+
+-- loader --
+
+b:Button("Universal Aimbot & Esp",function()
+loadstring(game:HttpGet('https://pastebin.com/raw/2xDTKdpV'))()
+end)
+
+b:Button("Reanimation GUI",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/seth98128/scripts/main/seth98128ReanimateGui'))()
+end)
+
+b:DestroyGUI()
+
+--- end of script ---
