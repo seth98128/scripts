@@ -1,7 +1,7 @@
----=== Neko Hub v0.1 ===---
+---=== Neko Hub v0.2 ===---
 
 game.StarterGui:SetCore("SendNotification", {
-Title = "Neko Hub v0.1 - Loader";
+Title = "Neko Hub v0.2 - Loader";
 Text = "Script loaded | made by catboy.uwu #2913";
 Duration = 5;
 })
@@ -14,12 +14,16 @@ local library = loadstring(game:HttpGet(('https://pastebin.com/raw/FsJak6AT')))(
 
 local w = library:CreateWindow("Hello")
 
-local b = w:CreateFolder("Loader")
+local b = w:CreateFolder("Games")
 
 -- loader --
 
-b:Button("Universal Aimbot & Esp",function()
-loadstring(game:HttpGet('https://pastebin.com/raw/2xDTKdpV'))()
+b:Button("OwlHub Universal Aimbot & Esp",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SiLeNSwOrD/OwlHub/master/OwlHub.txt"))()
+end)
+
+b:Button("Laundry Simulator",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/seth98128/scripts/main/lsscript'))()
 end)
 
 b:Button("Reanimation GUI",function()
