@@ -1,5 +1,5 @@
 game.StarterGui:SetCore("SendNotification", {
-Title = "Neko Hub v0.3 - Basically FNF";
+Title = "Neko Hub - Basically FNF";
 Text = "Script loaded | made by catboy.uwu #2913";
 Duration = 5;
 })
