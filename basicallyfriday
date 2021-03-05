@@ -16,8 +16,8 @@ local del = 0.2
 local ui = material.Load({
     Title = "Neko Hub - Basically FNF",
     Style = 1,
-    SizeX = 400,
-    SizeY = 160,
+    SizeX = 350,
+    SizeY = 120,
     Theme = "Light"
 })
 
@@ -33,33 +33,6 @@ local delspeed = main.Slider({
     Min = 1,
     Max = 100,
     Def = 20
-})
-
-local save = main.Button({
-    Text = "Save",
-    Callback = function()
-        local savedName = name:GetText()
-        local savedDelay = tonumber(delay:GetText())
-        
-        if not savedDelay then return end -- prevent funky monkey
-        
-        local save, result = pcall(readfile, "fnfAutoplayer.json")
-        if not save then
-            local saved = {savedName = savedDelay}
-            writefile("fnfAutoPlayer.json", HttpService:JSONEncode(saved))
-        else
-            result = HttpService:JSONDecode(result)
-            result[savedName] = savedDelay
-            writefile("fnfAutoPlayer.json", HttpService:JSONEncode(result))
-        end
-
-		main.Button({
-            Text = ("%s | %s"):format(savedName, savedDelay),
-            Callback = function()
-                del = delay / 100
-            end
-        })
-    end
 })
 
 local save, result = pcall(readfile, "fnfAutoplayer.json")
