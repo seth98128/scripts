@@ -1,5 +1,5 @@
 game.StarterGui:SetCore("SendNotification", {
-Title = "Neko Hub v0.2 - Reanimate GUI";
+Title = "Neko Hub - Reanimate GUI";
 Text = "Script loaded | made by catboy.uwu #2913";
 Duration = 5;
 })
