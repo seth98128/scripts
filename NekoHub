@@ -30,6 +30,14 @@ b:Button("Reanimation GUI",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/seth98128/scripts/main/seth98128ReanimateGui'))()
 end)
 
+b:Button("Basically FNF",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/seth98128/scripts/main/basicallyfriday'))()
+end)
+
+b:Button("Ragdoll Engine",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/seth98128/scripts/main/ragdoll'))()
+end)
+
 b:DestroyGUI()
 
 --- end of script ---
