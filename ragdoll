@@ -1,0 +1,68 @@
+game.StarterGui:SetCore("SendNotification", {
+Title    = "Neko Hub - Ragdoll Engine";
+Text     = "Script loaded | made by catboy.uwu #2913";
+Duration = 5;
+})
+
+-- Script
+local spush = 0
+local npush = 0
+game:GetService("RunService").RenderStepped:Connect(function(step)
+	if spush == true then
+	    pcall(function()
+	        game.Players.LocalPlayer.Character.Push.PushEvent:FireServer()
+	    end)
+	end
+	if npush == true then
+		pcall(function()
+			game.Players.LocalPlayer.Character.Push.Configuration.Cooldown.Value = 0
+		end)
+	end
+end)
+
+-- infjump
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+
+-- UI
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+
+local w = library:CreateWindow("Ragdoll Engine GUI")
+local b = w:CreateFolder("Main")
+local bb = w:CreateFolder("LocalPlayer")
+
+-- Main
+b:Button("Anti Ragdoll",function()
+    game.Players.LocalPlayer.Character["Local Ragdoll"]:Destroy()
+	game.Players.LocalPlayer.Character.Controls:Destroy()
+	game.Players.LocalPlayer.Character["State Handler"]:Destroy()
+	game.Players.LocalPlayer.Character.LocalScript:Destroy()
+end)
+
+b:Toggle("Super Push",function(state)
+    spush = state
+end)
+
+b:Toggle("No Push Cooldown",function(state)
+    npush = state
+end)
+
+-- LocalPlayer
+bb:Box("WalkSpeed",tostring(game.Players.LocalPlayer.Character.Humanoid.WalkSpeed),function(value)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed=tonumber(value)
+end)
+
+bb:Box("Jump Power",tostring(game.Players.LocalPlayer.Character.Humanoid.WalkSpeed),function(value)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower=tonumber(value)
+end)
+
+bb:Box("Gravity",tostring(math.floor(game.Workspace.Gravity)),function(value)
+    game.Workspace.Gravity = tonumber(value)
+end)
+
+bb:Toggle("Infinite Jump",function(state)
+    InfiniteJumpEnabled = state
+end)
