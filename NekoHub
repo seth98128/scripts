@@ -1,7 +1,7 @@
----=== Neko Hub v0.2 ===---
+---=== Neko Hub ===---
 
 game.StarterGui:SetCore("SendNotification", {
-Title = "Neko Hub v0.2 - Loader";
+Title = "Neko Hub v0.3 - Loader";
 Text = "Script loaded | made by catboy.uwu #2913";
 Duration = 5;
 })
